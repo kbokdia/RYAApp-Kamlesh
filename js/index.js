@@ -24,7 +24,9 @@ function onDeviceReady() {
         console.log("DB present .. dbInit set to true");
     }
     
-    $("#loadAd").fadeOut("slow");
+    $("#loadAd").fadeOut( 5000, function() {
+		console.log("FadeOut Function");
+	});
 	
     if(getBoolean(localStorage.getItem("isLoggedIn")) != true) {
         displayPage("login.html");
