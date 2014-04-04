@@ -24,7 +24,7 @@ function onDeviceReady() {
         console.log("DB present .. dbInit set to true");
     }
     
-    setTimeout(function(){alert("Hello")},3000);
+    setTimeout(function(){document.write("<img src='img/ad2.jpg' style='width: 100%; height: 100%;'>")},3000);
     if(getBoolean(localStorage.getItem("isLoggedIn")) != true) {
         displayPage("login.html");
         console.log("no login");
