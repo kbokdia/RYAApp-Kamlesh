@@ -23,7 +23,9 @@ function onDeviceReady() {
         localStorage.setItem("dbInit", true);
         console.log("DB present .. dbInit set to true");
     }
-    
+    $( "#loadAd" ).fadeIn( "fast", function() {
+		console.log("FadeIn");
+	});
     $("#loadAd").fadeOut( 5000, function() {
 		console.log("FadeOut Function");
 	});
