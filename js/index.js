@@ -24,8 +24,8 @@ function onDeviceReady() {
         console.log("DB present .. dbInit set to true");
     }
     
-    var timeout = window.setTimeout(function(){document.write("<img src='img/ad2.jpg' style='width: 100%; height: 100%;'>")},3000);
-	window.clearTimeout(timeout);
+    $("#loadAd").fadeOut("slow");
+	
     if(getBoolean(localStorage.getItem("isLoggedIn")) != true) {
         displayPage("login.html");
         console.log("no login");
