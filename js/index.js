@@ -24,7 +24,7 @@ function onDeviceReady() {
         console.log("DB present .. dbInit set to true");
     }
     
-    $("#loading").hide();
+    setTimeout(function(){alert("Hello")},3000);
     if(getBoolean(localStorage.getItem("isLoggedIn")) != true) {
         displayPage("login.html");
         console.log("no login");
