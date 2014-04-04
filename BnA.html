@@ -1,0 +1,206 @@
+<!-- Pushy Menu -->
+<nav class="pushy pushy-left">
+    <ul>
+        <a class="backBtn"><li><span class="glyphicon glyphicon-arrow-left"></span>&nbsp;&nbsp;&nbsp; Back</li></a>
+        <a class="otherBtn getHref" id="home.html"><li><span class="glyphicon glyphicon-home"></span>&nbsp;&nbsp;&nbsp; Home</li></a>
+        <a class="otherBtn getHref" id="members.html"><li><span class="glyphicon glyphicon-book"></span>&nbsp;&nbsp;&nbsp; Members</li></a>
+        <a class="otherBtn getHref" id="directors.html"><li><span class="glyphicon glyphicon-user"></span>&nbsp;&nbsp;&nbsp; Directors</li></a>
+        <a class="otherBtn getHref" id="events.html"><li><span class="glyphicon glyphicon-calendar"></span>&nbsp;&nbsp;&nbsp; Events</li></a>
+        <a class="otherBtn"><li><span class="glyphicon glyphicon-picture"></span>&nbsp;&nbsp;&nbsp; Albums</li></a>
+        <a class="pushyActive"><li><span class="glyphicon glyphicon-gift"></span>&nbsp;&nbsp;&nbsp; B-day & A-sary</li></a>
+        <a class="otherBtn"><li><span class="glyphicon glyphicon-envelope"></span>&nbsp;&nbsp;&nbsp; R.S.V.P.</li></a>
+    </ul>
+</nav>
+<!-- Site Overlay -->
+<div class="site-overlay"></div>
+<div id="container">
+    <header>
+        <div class="page-header navbar-default navbar-fixed-top" align="center">
+            <button class="menu-btn navbar-toggle" type="button" id="myMenuBtn">
+            <span class="sr-only">Toggle navigation</span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+            </button>
+            <h2 id="headerText">Wish Them</h2>
+            <button class="navbar-toggle" type="button" data-toggle="modal" data-target="#searchModal">
+            <span class="glyphicon glyphicon-search"></span>        
+            </button>            
+        </div>
+    </header>
+    <!-- Modal -->
+    <div class="modal fade" id="searchModal" tabindex="-1" role="dialog" aria-labelledby="searchLabel" aria-hidden="true">
+        <div class="modal-dialog modal-sm">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <button type="button" class="close" data-dismiss="modal" aria-hidden="true">&times;</button>
+                    <h4 class="modal-title" id="searchLabel">Search</h4>
+                </div>
+                <div class="modal-body">
+                    <form role="form">
+                        <div class="form-group">
+                            <label for="memberName">Name</label>
+                            <input type="text" class="form-control" id="memberName" placeholder="Name" name="memberName">
+                        </div>
+                        <div class="form-group">
+                            <label for="bloodGroup">Blood Group</label>
+                            <select class="form-control" id="bloodGroup" name="bloodGroup">
+                                <option value="">Select Blood Group</option>
+                                <option value="O+">O+</option>
+                                <option value="O-">O-</option>
+                                <option value="A+">A+</option>
+                                <option value="A-">A-</option>
+                                <option value="B+">B+</option>
+                                <option value="B-">B-</option>
+                                <option value="AB+">AB+</option>
+                                <option value="AB-">AB-</option>
+                            </select>
+                        </div>
+                        <div class="form-group">
+                            <label for="memberOccupation">Occupation</label>
+                            <input type="text" class="form-control" id="memberOccupation" placeholder="Occupation" name="memberOccupation">
+                        </div>
+                    </form>
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+                    <button type="button" class="btn btn-primary" id="search_btn">Search</button>
+                </div>
+            </div>
+        </div>
+    </div>
+    <br/>
+    <br/>
+
+    <div class="container homeContent" align="center">
+        <div class='panel-group' id='wishes'>
+
+            <div class='panel panel-default'>
+                <div class='panel-heading'>
+                    <h4 class='panel-title'>
+                        <a data-toggle='collapse' data-parent='#wishes' href='#subWishToday'>
+                            Today
+                        </a>
+                    </h4>
+                </div>
+                <div id='subWishToday' class='panel-collapse collapse in'>
+                    <div class='panel-body'>
+                        <div class='panel-group' id='todayWish'>
+                            <div class='panel panel-info'>
+                                <div class='panel-heading'>
+                                    <h4 class='panel-title'>
+                                        <a data-toggle='collapse' data-parent='#todayWish' href='#todayBday'>
+                                            Birthday
+                                        </a>
+                                    </h4>
+                                </div>
+                                <div id='todayBday' class='panel-collapse collapse in'>
+                                </div>
+                            </div>
+                            <div class='panel panel-info'>
+                                <div class='panel-heading'>
+                                    <h4 class='panel-title'>
+                                        <a data-toggle='collapse' data-parent='#todayWish' href='#todayAsary'>
+                                            Anniversary
+                                        </a>
+                                    </h4>
+                                </div>
+                                <div id='todayAsary' class='panel-collapse collapse'>                                    
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class='panel panel-default'>
+                <div class='panel-heading'>
+                    <h4 class='panel-title'>
+                        <a data-toggle='collapse' data-parent='#wishes' href='#subWishTmr'>
+                            Tomorrow
+                        </a>
+                    </h4>
+                </div>
+                <div id='subWishTmr' class='panel-collapse collapse'>
+                    <div class='panel-body'>
+                        <div class='panel-group' id='tmrWish'>
+                            <div class='panel panel-info'>
+                                <div class='panel-heading'>
+                                    <h4 class='panel-title'>
+                                        <a data-toggle='collapse' data-parent='#tmrWish' href='#tmrBday'>
+                                            Birthday
+                                        </a>
+                                    </h4>
+                                </div>
+                                <div id='tmrBday' class='panel-collapse collapse in'>
+                                </div>
+                            </div>
+                            <div class='panel panel-info'>
+                                <div class='panel-heading'>
+                                    <h4 class='panel-title'>
+                                        <a data-toggle='collapse' data-parent='#tmrWish' href='#tmrAsary'>
+                                            Anniversary
+                                        </a>
+                                    </h4>
+                                </div>
+                                <div id='tmrAsary' class='panel-collapse collapse'>                                    
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class='panel panel-default'>
+                <div class='panel-heading'>
+                    <h4 class='panel-title'>
+                        <a data-toggle='collapse' data-parent='#wishes' href='#subWishDayAfter'>
+                            Day After
+                        </a>
+                    </h4>
+                </div>
+                <div id='subWishDayAfter' class='panel-collapse collapse'>
+                    <div class='panel-body'>
+                        <div class='panel-group' id='dayAfterWish'>
+                            <div class='panel panel-info'>
+                                <div class='panel-heading'>
+                                    <h4 class='panel-title'>
+                                        <a data-toggle='collapse' data-parent='#dayAfterWish' href='#dayAfterBday'>
+                                            Birthday
+                                        </a>
+                                    </h4>
+                                </div>
+                                <div id='dayAfterBday' class='panel-collapse collapse in'>
+                                </div>
+                            </div>
+                            <div class='panel panel-info'>
+                                <div class='panel-heading'>
+                                    <h4 class='panel-title'>
+                                        <a data-toggle='collapse' data-parent='#dayAfterWish' href='#dayAfterAsary'>
+                                            Anniversary
+                                        </a>
+                                    </h4>
+                                </div>
+                                <div id='dayAfterAsary' class='panel-collapse collapse'>                                    
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+    </div>
+    <br/>
+    <br/>
+    <br/>
+    <br/>
+</div>   
+<div class="navbar navbar-default navbar-fixed-bottom">
+    <div class="container">
+        <h3 class="text-center">Incore Labs.</h3>
+    </div>
+</div>
+<script type="text/javascript" charset="utf-8" src="js/BnA.js"></script>
+<script src="js/pushy.min.js"></script>
+<script src="js/search.js"></script>

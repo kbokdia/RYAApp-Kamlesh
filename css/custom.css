@@ -1,0 +1,378 @@
+/* Index Page */
+.indexPageHeader {
+	margin: 0;
+	padding-top: 10px;
+	padding-bottom: 20px;
+	border-bottom: 1px solid #eee;
+}
+
+#egaLogo {	
+	margin-left: 10px;
+	display: inline-block;
+	width: 5em;
+	float: left;
+}
+
+#indexHeaderText {
+	margin-left: -1.5em;
+	display: inline-block;
+}
+
+/* Remaining Pages */
+.page-header {
+	margin: 0;
+	padding: 0;
+}
+
+#myMenuBtn {	
+	margin: 0.7em 0 1em 0.6667em;
+	display: inline-block;	
+	float: left;
+	background-color: white;
+}
+
+#headerText {
+	margin: 0.27em auto 0.35em 0;	
+	display: inline-block;
+}
+
+.homeContent{
+	margin-top: 5em;
+	margin-bottom: 7em;
+}
+
+.memberImgAndData {
+	border-style: outset;
+	border-radius: 1.5em;
+	border-top-color: #e7e7e7;
+	border-left-color: #e7e7e7;
+	border-right-color: #ffffff;
+	border-bottom-color: #ffffff;
+	padding-top: 1.5em;
+    padding-bottom: 1.5em;
+    margin-left: -0.8em;
+    margin-right: -0.8em;
+}
+
+.memberImgData {
+	float: left;
+}
+
+.noData {
+	padding-top: 1.25em;
+}
+.coupleDivider {
+	margin-top: 1em;
+	margin-bottom: 1em;
+}
+
+.singleMemberImgAndData {
+	border-style: outset;
+	border-radius: 1.5em;
+	border-top-color: #e7e7e7;
+	border-left-color: #e7e7e7;
+	border-right-color: #ffffff;
+	border-bottom-color: #ffffff;
+	padding-top: 1.5em;
+    padding-bottom: 1.5em;
+    margin-left: -0.8em;
+    margin-right: -0.8em;
+}
+
+.memberLink {
+	font-size: 1.3em;	
+}
+
+.spouseInfoTitleLabel {
+	font-size: 1.3em;
+	font-weight: bold;
+	color: forestgreen;
+}
+
+.spouseInfoTitleDetail {
+	font-size: 1.3em;
+	color: forestgreen;
+}
+
+.infoTitleLabel {
+	font-size: 1.3em;
+	font-weight: bold;	
+}
+
+.infoTitleDetail {
+	font-size: 1.3em;	
+}
+
+.list-group-item {
+	padding: 1.3em 0 3.5em 0;
+}
+
+/* Experimental Compilation*/
+
+body {
+    margin: 0;
+    word-wrap: break-word;
+	text-overflow: ellipsis;
+	overflow: visible;
+	white-space: normal;
+}
+nav ul, nav ol {
+     list-style: none;
+     list-style-image: none;
+}
+
+ul {
+     margin: 0;
+    padding: 0;
+}
+
+.navbar-toggle {
+	display: inherit;
+}
+
+#homeMenuBtn {
+	background-color: #5a0bb0;
+}
+
+#membersMenuBtn {
+	background-color: #53ae30;
+}
+
+#directorsMenuBtn {
+	background-color: #3d86d1;
+}
+
+#eventsMenuBtn {
+	background-color: #FFCC00;
+}
+
+#albumsMenuBtn {
+	background-color: #0c4473;
+}
+
+#bdayMenuBtn {
+	background-color: #A30000;
+}
+
+#rsvpMenuBtn {
+	background-color: #6c6a6e;
+}
+
+
+/* total Experimanetal
+*/
+
+.detailParentName {
+	padding-bottom: 0.5em;
+	font-size: 1.5em;
+	font-weight: bolder;
+}
+
+.altDetailParentName {	
+	font-size: 1.5em;
+	font-weight: bolder;
+}
+
+.detailParentDesignation {
+	font-size: 1.2em;
+	font-weight: bolder;
+}
+
+.detailKidName {
+	padding-top: 1.2em;
+	font-size: 1.5em;
+	font-weight: bolder;
+}
+
+.detailOther {	
+	font-size: 1em;	
+}
+
+.thumbnail {
+	padding: 10px 4px 10px 10px;
+}
+
+.detailContent {
+	margin-top: 2em;
+}
+
+.otherDetail {	
+	border-bottom-style: ridge;
+}
+
+.listItems {
+	border-top-style: ridge;
+}
+
+span.Icon {
+	top: 0.6em;
+	font-size: 2em;
+	float: right;
+}
+
+span.glyphicon-search {
+	top: 0px;
+}
+
+a {
+	color: #333;
+}
+
+a:hover {
+	color: #333;
+}
+
+.modal-body {
+	padding-bottom: 0;
+}
+
+#kidsBodyModal {
+	padding: 0;
+}
+
+#kidsFooterModal {
+	margin-top: 0;
+}
+
+.kidsItems {
+	border-top-style: ridge;
+	text-align: left;
+}
+
+.rsvpBlock {
+	padding-bottom: 1.5em;
+}
+
+.Asary {
+	border-style: outset;
+	padding-top: 0.5em;
+	padding-bottom: 0.5em;
+}
+
+@media (min-width: 240px) and (max-width: 319px) and (orientation: portrait) {
+	.memberImgAndData {
+		padding-top: 1em;
+    	padding-bottom: 1.5em;
+	}
+
+	.memberImgData {
+		padding-right: 0;
+		padding-top: 4em;
+	}
+
+	.coupleData {
+		padding-top: 0em;
+	}
+
+	.singleMemberImgData {
+		padding-right: 0;
+		padding-top: 0.25em
+	}
+}
+
+@media (min-width: 320px) and (max-width: 350px) and (orientation: portrait) {
+	.memberImgAndData {
+		padding-top: 1em;
+    	padding-bottom: 1.5em;
+	}
+
+	.memberImgData {
+		padding-right: 0;
+		padding-top: 1.5em;
+	}
+
+	.coupleData {
+		padding-top: 2em;
+	}
+
+	.singleMemberImgData {
+		padding-right: 0;
+		padding-top: 0.25em
+	}
+
+	.singleData {
+		padding-top: 2.2em;
+	}
+}
+
+@media (min-width: 350px) and (max-width: 479px) and (orientation: portrait) {
+	.memberImgAndData {
+		padding-top: 1em;
+    	padding-bottom: 1.5em;
+	}
+
+	.memberImgData {
+		padding-right: 0;
+		padding-top: 1.5em;
+	}
+
+	.coupleData {
+		padding-top: 2em;
+	}
+
+	.singleMemberImgData {
+		padding-right: 0;
+		padding-top: 0.25em
+	}
+
+	.singleData {
+		padding-top: 3.3em;
+	}
+}
+
+@media (min-width: 320px) and (max-width: 479px) and (orientation: landscape) {
+	.memberImgAndData {
+		padding-top: 1em;
+    	padding-bottom: 1.5em;
+	}
+
+	.memberImgData {
+		padding-right: 0;
+		padding-top: 1.5em;
+	}
+
+	.coupleData {
+		padding-top: 0em;
+	}
+
+	.singleData {
+		padding-top: 1.8em;
+	}
+}
+
+@media (min-width: 480px) {
+	.coupleData {
+		padding-top: 2.85em;
+	}	
+}
+
+@media (min-width: 480px) and (orientation: portrait) {
+	.singleData {
+		padding-top: 4em;
+	}	
+}
+
+@media (min-width: 480px) and (orientation: landscape) {
+	.singleData {
+		padding-top: 4.5em;
+	}
+}
+
+.pushy ul a {
+	-webkit-box-shadow: inset -10px 0 6px -9px rgba(0, 0, 0, .7);
+    -moz-box-shadow: inset -10px 0 6px -9px rgba(0, 0, 0, .7);
+    box-shadow: inset -10px 0 6px -9px rgba(0, 0, 0, .7);
+    color: white;
+}
+
+.backBtn {	
+	background-color: tomato;
+}
+
+.otherBtn {
+	background-color: #b07d48;
+}
+
+.pushyActive {
+	background-color: #00b4ff;
+}
