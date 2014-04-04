@@ -13,6 +13,8 @@ function onDeviceReady() {
     document.addEventListener("pause", onPause, false);
     document.addEventListener("resume", onResume, false);
     document.addEventListener("backbutton", onBackKeyDown, false);
+	
+	setTimeout(function(){console.log("TimeOut")},5000);
 
     if(localStorage.getItem("localDBversion") == null) {
         localStorage.setItem("dbInit", false);
@@ -23,12 +25,7 @@ function onDeviceReady() {
         localStorage.setItem("dbInit", true);
         console.log("DB present .. dbInit set to true");
     }
-    $( "#loadAd" ).fadeIn( "fast", function() {
-		console.log("FadeIn");
-	});
-    $("#loadAd").fadeOut( 5000, function() {
-		console.log("FadeOut Function");
-	});
+   
 	
     if(getBoolean(localStorage.getItem("isLoggedIn")) != true) {
         displayPage("login.html");
